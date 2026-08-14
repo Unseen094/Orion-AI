@@ -1,5 +1,4 @@
 # ORION — Execution Plan & Product Specification
-AIzaSyBGOdn2vkXpzI2fXphIuiz0cGC_tTQH7Ao
 
 > **The Open-Source AI Operating System**
 > A 30-hour AI hackathon plan. Optimized for demo quality, innovation, stability, polish, speed of development, judge perception, and "wow factor." Not optimized for production-readiness.
