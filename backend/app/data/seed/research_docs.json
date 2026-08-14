@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Quantum computing - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Quantum_computing",
+    "snippet": "Quantum computing is a type of computation that harnesses the collective properties of quantum states, such as superposition, interference, and entanglement, to perform calculations."
+  },
+  {
+    "title": "What is Quantum Computing? - IBM",
+    "url": "https://www.ibm.com/topics/quantum-computing",
+    "snippet": "Quantum computers use qubits to operate in more than one state (0 and 1 at the same time) and can solve certain problems much faster than classical computers, such as factoring large numbers."
+  },
+  {
+    "title": "Quantum Computing Overview - Google Quantum AI",
+    "url": "https://quantumai.google/learn/what-is-google-quantum-ai",
+    "snippet": "Quantum computing could dramatically accelerate tasks like drug discovery, materials science, cryptography and optimization. Google demonstrated quantum supremacy in 2019 with the Sycamore processor."
+  },
+  {
+    "title": "Qubit - an elementary unit of quantum information",
+    "url": "https://en.wikipedia.org/wiki/Qubit",
+    "snippet": "A qubit is the basic unit of quantum information, a two-state quantum-mechanical system. Unlike a classical bit, a qubit can exist in a superposition of both states."
+  },
+  {
+    "title": "Quantum error correction explained - Nature",
+    "url": "https://www.nature.com/articles/d41586-023-01242-3",
+    "snippet": "Error correction is the central challenge of quantum computing. Logical qubits built from many physical qubits can correct errors, but require thousands of physical qubits per logical qubit today."
+  },
+  {
+    "title": "Quantum supremacy - Google 2019 experiment",
+    "url": "https://www.nature.com/articles/s41586-019-1666-5",
+    "snippet": "Google's Sycamore processor performed a task in 200 seconds that would take a classical supercomputer 10,000 years, demonstrating quantum supremacy for the first time."
+  },
+  {
+    "title": "Shor's algorithm - integer factorization",
+    "url": "https://en.wikipedia.org/wiki/Shor%27s_algorithm",
+    "snippet": "Shor's algorithm is a quantum algorithm that factors integers in polynomial time, threatening RSA cryptography if large-scale quantum computers become available."
+  },
+  {
+    "title": "Quantum supremacy - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Quantum_supremacy",
+    "snippet": "Quantum supremacy marks the point at which a quantum computer can perform a computation that no classical computer can perform in a feasible amount of time."
+  },
+  {
+    "title": "Post-quantum cryptography - NIST",
+    "url": "https://www.nist.gov/pqcrypto",
+    "snippet": "NIST has standardized post-quantum cryptographic algorithms designed to be secure against both quantum and classical computers, protecting against harvest-now-decrypt-later attacks."
+  },
+  {
+    "title": "Superconducting qubits and cooling - ScienceDaily",
+    "url": "https://www.sciencedaily.com/releases/quantum-computing",
+    "snippet": "Most quantum computers use superconducting qubits cooled to temperatures near absolute zero, inside dilution refrigerators, to maintain quantum coherence."
+  },
+  {
+    "title": "Artificial intelligence - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+    "snippet": "Artificial intelligence is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans and animals. AI research has become a core part of technology."
+  },
+  {
+    "title": "Large language models explained - OpenAI",
+    "url": "https://openai.com/research/language-models",
+    "snippet": "Large language models are trained on massive text corpora using next-token prediction, and can perform tasks ranging from code generation to summarization and dialogue."
+  },
+  {
+    "title": "Machine learning - Stanford CS229",
+    "url": "https://cs229.stanford.edu",
+    "snippet": "Machine learning gives computers the ability to learn without being explicitly programmed, using techniques like supervised learning, unsupervised learning and reinforcement learning."
+  },
+  {
+    "title": "CRISPR gene editing overview - MIT",
+    "url": "https://www.technologyreview.com/crispr",
+    "snippet": "CRISPR is a gene-editing tool that allows scientists to alter DNA sequences and modify gene function, with applications in medicine, agriculture and biology research."
+  },
+  {
+    "title": "James Webb Space Telescope discoveries",
+    "url": "https://www.nasa.gov/webb",
+    "snippet": "The James Webb Space Telescope observes the universe in infrared, revealing galaxies from the early universe, exoplanet atmospheres and star formation regions."
+  }
+]

@@ -1,0 +1,301 @@
+INFO:     Started server process [14036]
+INFO:     Waiting for application startup.
+2026-08-04 13:40:20,811 INFO orion Orion backend started (offline=False)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-08-04 13:40:57,274 INFO orion.http GET /api/health -> 200 (34ms)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1164, in emit
+    self.flush()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1144, in flush
+    self.stream.flush()
+OSError: [Errno 22] Invalid argument
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\main.py", line 440, in main
+    run(
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\main.py", line 621, in run
+    server.run()
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\server.py", line 77, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 671, in run_until_complete
+    self.run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 638, in run_forever
+    self._run_once()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1971, in _run_once
+    handle._run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 194, in __call__
+    await response(scope, wrapped_receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 223, in __call__
+    await send(
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 482, in send
+    self.access_logger.info(
+Message: '%s - "%s %s HTTP/%s" %d'
+Arguments: ('127.0.0.1:49975', 'GET', '/api/health', '1.1', 200)
+2026-08-04 13:41:02,946 INFO google_genai.models AFC is enabled with max remote calls: 10.
+2026-08-04 13:41:03,458 INFO httpx HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 400 Bad Request"
+2026-08-04 13:41:03,486 INFO orion.chat turn: yard=None offline=False msg='hello'
+2026-08-04 13:41:03,487 INFO orion.http POST /api/chat/stream -> 200 (2813ms)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1164, in emit
+    self.flush()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1144, in flush
+    self.stream.flush()
+OSError: [Errno 22] Invalid argument
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\main.py", line 440, in main
+    run(
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\main.py", line 621, in run
+    server.run()
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\server.py", line 77, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 671, in run_until_complete
+    self.run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 638, in run_forever
+    self._run_once()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1971, in _run_once
+    handle._run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 194, in __call__
+    await response(scope, wrapped_receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 223, in __call__
+    await send(
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 482, in send
+    self.access_logger.info(
+Message: '%s - "%s %s HTTP/%s" %d'
+Arguments: ('127.0.0.1:49976', 'POST', '/api/chat/stream', '1.1', 200)
+2026-08-04 13:41:08,042 INFO httpx HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse "HTTP/1.1 400 Bad Request"
+2026-08-04 13:41:08,056 ERROR orion.chat live generation failed (yard=None)
+Traceback (most recent call last):
+  File "D:\projects\Orion\backend\app\services\orchestrator.py", line 187, in stream
+    async for event in gemini.stream_chat(
+  File "D:\projects\Orion\backend\app\services\gemini_client.py", line 139, in stream_chat
+    async for chunk in stream:
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\google\genai\models.py", line 9022, in stream_generator
+    response = await self._generate_content_stream(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\google\genai\models.py", line 7361, in _generate_content_stream
+    response_stream = await self._api_client.async_request_streamed(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\google\genai\_api_client.py", line 1771, in async_request_streamed
+    response = await self._async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\google\genai\_api_client.py", line 1687, in _async_request
+    return await self._async_retry(  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\tenacity\_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\tenacity\asyncio\__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\google\genai\_api_client.py", line 1588, in _async_request_once
+    await errors.APIError.raise_for_async_response(client_response)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\google\genai\errors.py", line 247, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\google\genai\errors.py", line 269, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}
+2026-08-04 13:41:34,219 INFO orion.http POST /api/settings/api-key -> 200 (38ms)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1164, in emit
+    self.flush()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1144, in flush
+    self.stream.flush()
+OSError: [Errno 22] Invalid argument
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\main.py", line 440, in main
+    run(
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\main.py", line 621, in run
+    server.run()
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\server.py", line 77, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 671, in run_until_complete
+    self.run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 638, in run_forever
+    self._run_once()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1971, in _run_once
+    handle._run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 194, in __call__
+    await response(scope, wrapped_receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 223, in __call__
+    await send(
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 482, in send
+    self.access_logger.info(
+Message: '%s - "%s %s HTTP/%s" %d'
+Arguments: ('127.0.0.1:57279', 'POST', '/api/settings/api-key', '1.1', 200)
+2026-08-04 13:41:49,946 INFO orion.http GET /api/settings -> 200 (9ms)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1164, in emit
+    self.flush()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1144, in flush
+    self.stream.flush()
+OSError: [Errno 22] Invalid argument
+Call stack:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1490, in main
+    rv = self.invoke(ctx)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\click\core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\main.py", line 440, in main
+    run(
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\main.py", line 621, in run
+    server.run()
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\server.py", line 77, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 671, in run_until_complete
+    self.run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 638, in run_forever
+    self._run_once()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1971, in _run_once
+    handle._run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.496.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 194, in __call__
+    await response(scope, wrapped_receive, send)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\base.py", line 223, in __call__
+    await send(
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 161, in _send
+    await send(message)
+  File "D:\projects\Orion\backend\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 482, in send
+    self.access_logger.info(
+Message: '%s - "%s %s HTTP/%s" %d'
+Arguments: ('127.0.0.1:57281', 'GET', '/api/settings', '1.1', 200)

@@ -1,0 +1,18 @@
+[
+  {
+    "keywords": ["quantum", "computing", "research"],
+    "response": "## Quantum Computing\n\nQuantum computing uses qubits — quantum bits that exist in superposition of 0 and 1 — to solve certain problems far faster than classical computers.\n\n- **Qubits**: can represent 0, 1, or both simultaneously via superposition.\n- **Entanglement**: links qubits so their states correlate instantly, enabling parallelism.\n- **Milestones**: Google's Sycamore demonstrated quantum supremacy in 2019; IBM and Google now lead with 1000+ qubit machines.\n- **Challenges**: quantum error correction remains the core obstacle — thousands of physical qubits per logical qubit.\n\n_Takeaway: Quantum computing is real, fast-growing, and will break RSA cryptography — post-quantum standards are already here._"
+  },
+  {
+    "keywords": ["build", "app", "code", "dashboard", "react", "todo", "coding"],
+    "response": "I opened the Coding Yard. Here's what I did:\n\n1. Created a new project workspace.\n2. Scaffolded a React + Vite structure with package.json, index.html, src/App.tsx and styles.\n3. Wrote a working To-Do app with add/toggle/complete functionality.\n\nYou can open the file explorer, edit any file in Monaco, and hit RUN in the console to simulate the dev server.\n\n_Note: offline mode is active — configure a Gemini API key in Settings for live generation._"
+  },
+  {
+    "keywords": ["hello", "hi", "hey", "who are you"],
+    "response": "I'm ORION — an AI operating system. I open task-shaped workspaces called Yards and do things inside them: build code, research topics, control this machine. Ask me to do something real."
+  },
+  {
+    "keywords": ["notepad", "type", "mouse", "keyboard", "open"],
+    "response": "I can act on this machine — typing, clicking, opening apps. I'm currently in simulation mode for safety, so no real system actions fired, but the control monitor showed exactly what would happen. Enable real control from the terminal or flip sim mode off in the backend."
+  }
+]
