@@ -1,0 +1,18 @@
+npm notice run frontend@0.0.0 dev
+npm notice run vite
+[2m5:11:06 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because vite config has changed
+
+  [32m[1mVITE[22m v8.2.0[39m  [2mready in [0m[1m8039[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m5:11:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] scanning dependencies...
+[2m5:11:09 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [optimizer] bundling dependencies...
+[2m11:49:50 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css, /src/App.tsx, /src/components/shell/StatusBar.tsx, /src/components/chat/ChatPanel.tsx, /src/components/yards/YardShell.tsx, /src/components/shell/TopBar.tsx, /src/pages/YardsPage.tsx, /src/pages/HomePage.tsx, /src/components/yards/coding/ProjectList.tsx, /src/components/yards/coding/MonacoPane.tsx, /src/components/yards/coding/ConsolePanel.tsx, /src/components/yards/research/NotesPanel.tsx, /src/components/yards/coding/FileExplorer.tsx and 7 more[22m
+[2m11:50:11 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css, /src/App.tsx, /src/components/shell/StatusBar.tsx, /src/components/chat/ChatPanel.tsx, /src/components/yards/YardShell.tsx, /src/components/shell/TopBar.tsx, /src/pages/YardsPage.tsx, /src/pages/HomePage.tsx, /src/components/yards/coding/ProjectList.tsx, /src/components/yards/coding/MonacoPane.tsx, /src/components/yards/coding/ConsolePanel.tsx, /src/components/yards/research/NotesPanel.tsx, /src/components/yards/coding/FileExplorer.tsx and 7 more[22m
+[2m11:50:23 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css, /src/pages/SettingsPage.tsx[22m
+[2m11:50:42 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css, /src/pages/SettingsPage.tsx[22m
+[2m11:50:52 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css, /src/pages/SettingsPage.tsx[22m
+[2m11:51:06 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css, /src/pages/SettingsPage.tsx[22m
+[2m11:53:46 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css, /src/pages/SettingsPage.tsx[22m
